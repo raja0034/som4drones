@@ -13,7 +13,6 @@ def plot_network(locations, neurons, name='diagram.png'):
 
     plt.scatter(locations['X'], locations['Y'], c=locations['Z'], cmap="viridis", s=50, alpha=0.7)
     plt.plot(neurons[:,0], neurons[:,1], 'r.', ls='-', color='#0063ba', markersize=2)
-    plt.colorbar(label='Z') 
 
     plt.xlabel('X')
     plt.ylabel('Y')
