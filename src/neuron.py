@@ -8,7 +8,7 @@ def generate_network(size):
 
     Return a vector of two dimensional points in the interval [0,1].
     """
-    return np.random.rand(size, 2)
+    return np.random.rand(size, 3)
 
 def get_neighborhood(center, radix, domain):
     """Get the range gaussian of given radix around a center index."""
@@ -26,7 +26,7 @@ def get_neighborhood(center, radix, domain):
 
 def get_boundary(locations, network):
     """Return the boundary computed by a network."""
-    locations['winner'] = locations[['x', 'y']].apply(
+    locations['winner'] = locations[['X', 'Y', 'Z']].apply(
         lambda c: select_closest(network, c),
         axis=1, raw=True)
 
