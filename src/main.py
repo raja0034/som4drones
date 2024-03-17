@@ -68,7 +68,7 @@ def som(problem, iterations, learning_rate=0.8):
     else:
         print('Completed {} iterations.'.format(iterations))
 
-    plot_network(locations, network, name='diagrams/final.png')
+    # plot_network(locations, network, name='diagrams/final.png')
 
     boundary = get_boundary(locations, network)
     plot_boundary(locations, boundary, 'diagrams/boundary.png')
