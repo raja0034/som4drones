@@ -10,3 +10,5 @@ While SOM is applied to traveling salesman problem, an implementation is provide
 Implementation of SOM only without varying convergence: https://github.com/raja0034/som4drones 
 Sample Run:
 ![Run](diagrams/animation.gif)
+Sample Convergence"
+![Convergence](diagrams/ConvergenceImages.jpg)
